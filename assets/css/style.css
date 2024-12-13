@@ -1,0 +1,816 @@
+@font-face {
+    font-family: Urbanist;
+    src: url("../font/Urbanist-VariableFont_wght.ttf");
+}
+
+:root {
+    --white: #FFF;
+    --green-70: #CBEA7B;
+    --green-85: #E5F5BD;
+    --green-95: #F6FBE9;
+    --green-99:#FAFDF2;
+    --dark-green-15: #1A3129;
+    --dark-green-20: #234338;
+    --dark-green-30: #346454;
+    --grey-30: #4C4C4D;
+    --grey-60: #98989A;
+    --white-hover: rgba(255, 255, 255, 0.502);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* & Gerneral Styling here */
+
+html {
+    font-size: 62.5%;
+    font-family: Urbanist;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    font-size: clamp( 1.4rem, 1vw, 1.8rem);
+    line-height: 150%;
+    font-weight: 400;
+    color: var(--white);
+}
+
+h2 {
+    font-size: clamp( 2.4rem, 2vw, 5rem);
+    font-weight: bold;
+    line-height: 150%;
+}
+
+h3 {
+    font-size: clamp( 1.8rem, 2vw, 3.4rem);
+    font-weight: 400;
+    line-height: 150%;
+}
+
+p {
+    font-size: clamp( 1.4rem, 1vw, 1.8rem);
+    line-height: 150%;
+}
+
+.flex {
+    display: flex;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.btn-main {
+    background-color: var(--green-70);
+    padding: 2% 4%;
+    border-radius: 0.5rem;
+    color: var(--grey-30);
+}
+
+.btn-main:hover {
+    background-color: var(--green-85);
+    border: 0.1rem solid var(--green-70);
+}
+
+.btn-demo {
+    color: var(--grey-30);
+    padding: 2% 4%;
+    border-radius: 0.5rem;
+    border: 0.1rem solid var(--green-70);
+}
+
+.btn-demo:hover {
+    background-color: var(--dark-green-30);
+    color: var(--white);
+}
+
+.text-align-headlines {
+    text-align: center;
+    padding-top: 5%;
+    margin: auto;
+    margin-bottom: 3%;
+    width: 60%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+/* & Styling header nav */
+
+nav {
+    background-color: var(--dark-green-15);
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 5% 2% 5%;
+    height: 166px;
+    position: relative;
+}
+
+.menu {
+    width: 50%;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.free-demo-link {
+    top: 10%;
+    left: 5%;
+    align-items: center;
+    justify-content: space-evenly;
+    width: calc(100vw - 11%);
+    background-color: var(--dark-green-20);
+    border: 0.05rem solid var(--dark-green-30);
+    border-radius: 0.5rem;
+}
+
+.free-demo-link a {
+    width: 80%;
+}
+
+nav article a {
+    justify-content: space-between;
+    width: 40%;
+}
+
+nav article a img {
+    object-fit: contain;
+}
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.burger-menu div {
+    background-color: var(--green-70);
+    height: 0.3rem;
+    width: 3rem;
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+}
+
+/* & Styling header hero */
+
+.hero {
+    padding-right: 5%;
+    position: relative;
+    padding-top: 3%;
+    box-shadow: 0 2px 4px var(--grey-60);
+}
+
+.healthy-woman {
+    width: 50%;
+    top: 0;
+    border: 0.2rem solid var(--green-70);
+    border-radius: 0 0 6% 0;
+}
+
+.hero article {
+    flex-direction: column;
+    margin-left: 55%;
+}
+
+.hero article h3 {
+    text-decoration: underline;
+    text-decoration-color: var(--green-70);
+    text-underline-offset: 1.5rem;
+    margin-bottom: 2%;
+}
+
+.hero article h1 {
+    font-size: clamp( 4.2rem, 4vw, 5.8rem);
+    margin-bottom: 2%;
+}
+
+.hero article p {
+    margin-bottom: 6%;
+}
+
+.hero article div {
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 6%;
+}
+
+
+.hero article img {
+    object-fit: contain;
+    width: 20%;
+}
+
+.hero article p {
+    padding-top: 6%;
+}
+
+/* & Styling Main */
+
+main {
+    background-color: var(--green-99);
+}
+
+
+main section:nth-of-type(1) article:nth-of-type(1) {
+    padding-bottom: 2%;
+}
+
+main section:nth-of-type(1) article:nth-of-type(2) {
+    padding: 0 5%;
+}
+
+.headline-icon {
+    align-items: center;
+    gap: 1rem;
+    padding: 5% 0 0 5%;
+}
+
+.single-features, .blogs, .blog-description, .blog-icon {
+    background-color: var(--green-95);
+    border-radius: 1rem;
+    border: 1px solid var(--green-85);
+}
+
+.single-features p {
+    padding: 3% 5% 5% 5%;
+}
+
+/* & Styling blog section */
+
+.blog-section {
+    margin: 0 5%;
+}
+
+.blogs {
+    padding: 3rem;
+}
+
+.cover-picture-blog {
+    padding-bottom: 2rem;
+}
+
+.blogs p:nth-of-type(1) {
+    font-weight: 700;
+}
+
+.blogs h3, .blogs p:nth-of-type(2):not(.date-of-blog){
+    padding-bottom: 3rem;
+}
+
+.blog-description {
+    padding: 1rem;
+    background-color: var(--green-99);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-writer {
+    gap: 10px;
+    align-items: center;
+}
+
+.blog-writer-info {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.date-of-blog {
+    color: var(--grey-60);
+}
+
+
+
+.blog-section .blog-icon {
+    object-fit: contain;
+    padding: 1.5rem;
+}
+
+.blog-section .blog-icon:nth-of-type(1) {
+    margin-right: 0.5rem;
+}
+
+/* & Calculate section */
+
+form {
+    border: 1px solid var(--green-85);
+    background-color: var(--green-95);
+    border-radius: 1rem;
+    margin: 5% 5%;
+    padding: 3% 3%;
+}
+
+.calorie-requirement form p, .calorie-requirement form label {
+    font-weight: 700;
+    padding-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.input-fields {
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 5%;
+}
+
+.input-1, .input-3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.input-2, .input-4 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+input, select {
+    width: 100%;
+    border: 1px solid var(--green-85);
+    padding: 1rem 0;
+    border-radius: 1rem;
+}
+
+.gender {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.male, .female {
+   flex-direction: row;
+   align-items: baseline;
+   gap: 10%;
+    padding-bottom: 10%;
+}
+
+.centered-elements-calorie-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centered-elements-calorie-section label {
+    margin-bottom: 2%;
+}
+
+.btn-calc {
+    width: 35%;
+}
+
+.calorie-table {
+    grid-template-columns: repeat(5, 1fr);
+    width: 80%;
+    border: 1px solid var(--green-70);
+    border-radius: 1rem;
+    margin: 5% 0;
+    background-color: var(--white);
+    padding: 1% 0;
+}
+
+.calorie-requirement form .calorie-table p {
+    padding-bottom: 0;
+}
+
+.table-content-1 {
+    grid-column: 4 / 5 ;
+}
+
+.line {
+    background-color: var(--green-70);
+    height: 1px;
+    width: 100%;
+    grid-column: 1 / 6;
+}
+
+.table-content-3 {
+    grid-column: 1 / 3 ;
+    padding-left: 3%;
+}
+
+.table-content-4 {
+    grid-column: 4 / 5 ;
+}
+
+.table-content-6 {
+    grid-column: 1 / 4 ;
+    padding-left: 3%;
+}
+
+.calorie-requirement form article:nth-of-type(2) div:last-of-type p {
+    font-weight: 500;
+}
+
+/* & Pricing section */
+
+.monthly {
+    justify-content: center;
+    border: 1px solid var(--green-70);
+    border-radius: 1rem;
+    width: 20%;
+    margin: auto;
+    margin-bottom: 2%;
+}
+
+.monthly p {
+    padding: 10% 28%;
+    margin: 10% 0;
+}
+
+.month {
+    background-color: var(--dark-green-30);
+    color: var(--white);
+    border-radius: 1rem;
+}
+
+.save-sell {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.plan-selection {
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 5%;
+    margin: 0 5%;
+}
+
+.plan-box {
+    background-color: var(--green-95);
+    border: 1px solid var(--green-85);
+    border-radius: 10px;
+    padding: 10%;
+}
+
+.green-headline {
+    color: var(--dark-green-30);
+    padding-bottom: 2%;
+}
+
+.plan-box p {
+    padding-bottom: 8%;
+}
+
+.price {
+    align-items: baseline;
+}
+
+.choose-class {
+    display: flex;
+    width: 100%;
+    padding: auto;
+    justify-content: center;
+}
+
+/* & Footer */
+
+footer {
+    background-color: var(--dark-green-15);
+    padding: 2% 5%;
+}
+
+.menu-not-hidden {
+    width: 40%;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+footer p {
+    color: var(--white);
+}
+
+footer article:nth-of-type(1) {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.link-to-top {
+    align-items: center;
+    justify-content: space-between;
+    width: 11%;
+}
+
+.link-to-top a:hover {
+    background-color: var(--white-hover);
+}
+
+.link-to-top a {
+    background-color: var(--dark-green-20);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.link-to-top img {
+    width: 50%;
+}
+
+footer article:nth-of-type(2) {
+    justify-content: space-between;
+    background-color: var(--dark-green-20);
+}
+
+footer article:nth-of-type(2), footer article:nth-of-type(2) a {
+    align-items: center;
+    border: 1px solid var(--dark-green-30);
+    padding: 1%;
+    border-radius: 1rem;
+}
+
+
+.contact-opps {
+    gap: 3%;
+    width: 60%;
+}
+
+
+@media screen and (max-width: 900px) { 
+
+    /* & General Styling */
+
+    .hero article h3 {
+        font-size: 1.5rem;
+        margin-bottom: 3.5%;
+    }
+
+    .hero article p {
+        font-size: 1.2rem;
+        padding-top: 0;
+    }
+
+    /* & Header Styling */
+
+    .healthy-woman {
+        border: none;    
+    }
+    
+    .hero {
+        border: none;
+        background-color: var(--green-99);
+        border-bottom: none;
+        box-shadow: none;
+    }
+
+    .hero article h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero div:nth-of-type(2) p {
+        margin: 0;
+    }
+
+    /* & Styling blog section */
+
+    .blog-section .blog-icon {
+        padding: 0.5rem;
+        width: 40%;
+    }
+
+    /* & Styling Calc Section */
+    
+    .select-placeholder {
+        font-size: 1rem;
+    }
+
+    /* & Styling Pricing */
+
+    .monthly p {
+        padding: 10% 20%;
+    }
+
+    /* & Styling footer */
+
+    .contact-opps {
+        gap: 1%;
+        width: 80%;
+    }
+
+    .link-to-top {
+        width: 18%;
+    }
+
+    .reserved-rights {
+        font-size: 0.8rem;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    /* & Gerneral Styling */
+
+    .text-align-headlines {
+        width: 90%;
+        padding-top: 10%;
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+        margin-bottom: 10%;
+    }
+
+
+    .text-align-headlines {
+        margin: 0 5%;
+    }
+
+    /* & Styling nav */
+
+    .hidden {
+        display: none;
+    }
+
+    nav article a {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    nav article:nth-of-type(1) {
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .free-demo-link {
+        width: 90%;
+    }
+
+    .free-demo-link a {
+        width: 100%;
+        align-items: center;
+    }
+
+    .free-demo-link p {
+        margin: 0;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    /* & Styling hero */
+
+    .hero {
+        width: 100%;
+        position: relative;
+    }
+
+    .healthy-woman {
+        width: 100%;
+    }
+
+    .hero article {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin: 100vw 0 0 0;
+    }
+
+    .hero div:nth-of-type(1) {
+        justify-content: center;
+    }
+
+    .hero div:nth-of-type(2) {
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: 48%;
+        left: 35%;
+        z-index: 1;
+    }
+
+    .hero div:nth-of-type(2) img {
+        width: 70%;
+    }
+
+    /* & Styling Feature Section */
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr)
+    }
+
+
+    /* & Styling blog section */
+
+    .blog-writer-info p {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* & Styling Calory Calc */
+
+    .input-fields {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .input-1, .input-2 , .input-3, .input-4{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .input-4 {
+        margin-bottom: 10%;
+    }
+
+    .input-1 p, .input-2 p, .input-3 p, .input-4 p{
+        margin: 0;
+    }
+
+    .gender {
+        width: 50%;
+    }
+
+    .calorie-table {
+        padding: 1% 3%;
+    }
+
+    /* &Styling Pricing */
+
+    .monthly {
+        justify-content: center;
+        border: 1px solid var(--green-70);
+        border-radius: 1rem;
+        width: 50%;
+        margin: auto;
+        margin-bottom: 2%;
+    }
+    
+    .monthly p {
+        padding: 5% 15%;
+        margin: 5% 0;
+    }
+
+    /* & Styling footer */
+
+    footer {
+        position: relative;
+    }
+
+    footer article:nth-of-type(1) {
+        padding-bottom: 20%;
+     }
+
+     .link-to-top {
+        width: 30%;
+        align-items: center;
+     }
+
+     .link-to-top p {
+        margin: 0;
+     }
+
+     .link-to-top a {
+        width: 30px;
+        height: 30px;
+    }
+
+    .menu-not-hidden {
+        position: absolute;
+        bottom: 70%;
+        z-index: 1;
+        width: 90%;
+        
+    }
+
+    footer article:nth-of-type(2) {
+       flex-wrap: wrap;
+    }
+
+    .contact-opps {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    footer article:nth-of-type(2) a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 5%;
+    }
+
+    footer article:nth-of-type(2) p {
+        margin: auto;
+        margin-bottom: 5%;
+    }
+
+    .reserved-rights {
+        font-size: 1.4rem;
+    }
+
+ }
