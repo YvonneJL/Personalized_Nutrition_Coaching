@@ -100,7 +100,7 @@ The aim of this project was to practice the concepts learned in the first module
 **IDE:**  
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)  
 **JS:**
-![Javascript](https://img.shields.io/badge/logo-javascript-blue?logo=javascript)
+![Javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 **Version Control:**  
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)  
 <!-- **Project Management:**  

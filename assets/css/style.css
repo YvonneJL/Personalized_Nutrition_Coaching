@@ -342,6 +342,7 @@ input, select {
     align-items: baseline;
     gap: 10%;
     padding-bottom: 10%;
+    accent-color: #CBEA7B;
 }
 
 .centered-elements-calorie-section {
