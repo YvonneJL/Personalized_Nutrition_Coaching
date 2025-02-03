@@ -23,10 +23,10 @@ Dieses Projekt stellt einen ersten Schritt auf meinem Weg in die Welt des Web De
 
 <!-- basic FRONTEND -->
 
-- [About](#about)
+- [Über das Projekt](#über-das-projekt)
 - [Tech Stack](#tech-stack)
 - [Getting Started](#getting-started)
-  - [Prequisites](#prequisites)
+  - [Voraussetzungen](#voraussetzungen)
   - [Installation](#installation)
   <!-- - [Usage](#usage) -->
 - [Design](#design)
@@ -75,7 +75,7 @@ Dieses Projekt stellt einen ersten Schritt auf meinem Weg in die Welt des Web De
   </ol>
 </details> -->
 
-## About
+## Über das Projekt
 
 <!-- Ein Abschnitt, der detaillierte Informationen über das Projekt liefert. Hier koennte der Zweck des Projekts, die verwendeten Technologien und der Entwicklungsprozess beschrieben werden. Dies gibt den Lesern einen tieferen Einblick in das Projekt. -->
 Dieses Projekt ist Bestandteil eines Web-Development-Kurses und wurde innerhalb von zwei Tagen eigenständig realisiert. Für die Entwicklung habe ich mit Visual Studio Code gearbeitet und die Website mit HTML und CSS erstellt. Die Berechnung des täglichen Kalorienverbrauchs, abhängig vom Geschlecht (männlich oder weiblich), wurde mithilfe von JavaScript umgesetzt.
@@ -104,7 +104,7 @@ Zu den zentralen Merkmalen der Website gehört eine responsive Navigationsleiste
 
 **Styling:**  
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-<!-- ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)   -->
+
 **IDE:**  
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)  
 
@@ -125,15 +125,15 @@ Zu den zentralen Merkmalen der Website gehört eine responsive Navigationsleiste
 
 Hier ist eine Anleitung, wie du das "Personalized Nutrition Coaching"-Projekt auf deinem lokalen Rechner einrichtest und ausführst:
 
-### Prequisites
+### Voraussetzungen
 
 <!-- Eine Liste der Voraussetzungen, die erfüllt sein müssen, bevor das Projekt installiert und ausgeführt werden kann. Dies könnte die Installation von Software wie Node.js, Git oder andere Abhängigkeiten beinhalten. -->
 
-Folgende Programme, solltest du installiert haben:
+Folgende Programme solltest du installiert haben:
 
 - [Git](https://git-scm.com/)
 - [VS Code](https://code.visualstudio.com/download)
-- [Live Server Extention for VS Code](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+- [Live Server Erweiterung für VS Code](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 <!-- Backend -->
 <!-- zB: - [Node.js](https://nodejs.org/) (includes npm) -->
@@ -142,17 +142,17 @@ Folgende Programme, solltest du installiert haben:
 
 <!-- Schritt-für-Schritt-Anweisungen zur Installation und Einrichtung des Projekts. Diese sollten klar und einfach zu befolgen sein, um sicherzustellen, dass auch weniger erfahrene Benutzer das Projekt erfolgreich starten können. -->
 
-1. **Clone the repository:**
+1. **Clone das Repository:**
    ```bash
    git clone https://github.com/YvonneJL/Personalized_Nutrition_Coaching
    ```
 
-### Running the Project
+### Ausführen des Projekts
 
 <!-- Anweisungen, wie das Projekt ausgeführt wird, nachdem es installiert wurde. Dies könnte das Starten eines lokalen Servers oder das Öffnen einer HTML-Datei in einem Webbrowser beinhalten. Bei Backend Projekten wird natuerlich noch mehr benoetigt. -->
 
-2. **Open the project and click to Go Live from the status bar to turn the server on**
-   ![Screenshot: how to start liveserver](https://github.com/ritwickdey/vscode-live-server/raw/HEAD/images/Screenshot/vscode-live-server-statusbar-3.jpg)
+2. **Öffne das Projekt und klicke auf "Go Live" in der Statusleiste unten rechts, um den Server anzuschalten**
+   ![Screenshot: wie man den Liveserver startet](https://github.com/ritwickdey/vscode-live-server/raw/HEAD/images/Screenshot/vscode-live-server-statusbar-3.jpg)
 
 **Alles ist eingerichtet! Nun kannst du das "Personalized Nutrition Coaching"-Projekt erkunden.
 
@@ -175,7 +175,7 @@ Das Design für „Personalized Nutrition Coaching“ wurde im Rahmen des Bootca
 
 <!-- Ein Abschnitt, der beschreibt, wie das Projekt bereitgestellt wurde. Dies könnte die Plattformen und Dienste umfassen, die zur Bereitstellung des Projekts verwendet wurden. -->
 
-<!-- ## Deployment
+## Deployment
 
-0 commit comments
-Comments -->
+Über diesen Link, kommst du direkt zur Webseite.
+- [Projekt "Personalized Nutrition Coaching"](https://personalized-nutrition-coaching.vercel.app/)
